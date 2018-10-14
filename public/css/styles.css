@@ -1,10 +1,10 @@
 @import url("//cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css");
 
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+@import url("/css/variables.css");
+@import url("/css/resets.css");
+@import url("/css/forms.css");
+@import url("/css/properties.css");
+@import url("/css/home.css");
+@import url("/css/results.css");
 
-a {
-  color: #00B7FF;
-}
+@import url("/css/utils.css");

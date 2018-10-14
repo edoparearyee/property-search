@@ -1,0 +1,16 @@
+.home {
+  padding: 1rem;
+}
+
+.home__heading {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-normal);
+  margin-bottom: 1rem;
+}
+
+.home__subheading {
+  color: var(--muted);
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-normal);
+  margin-bottom: 1rem;
+}

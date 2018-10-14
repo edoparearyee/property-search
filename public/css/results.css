@@ -1,0 +1,9 @@
+.results {
+  padding: 1rem;
+}
+
+.results__summary {
+  font-size: var(--font-size-x-small);
+  font-weight: var(--font-weight-normal);
+  margin-bottom: 1rem;
+}

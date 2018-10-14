@@ -1,2 +1,28 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<main class="home">
+  <h1
+    class="home__heading">
+    Search for houses and flats for sale across the UK
+  </h1>
+
+  <form
+    class="form"
+    method="GET"
+    action="/api/search">
+    <label
+      class="form__label sr-only"
+      for="query">
+      Search query
+    </label>
+    <input
+      class="form__control form__control--text"
+      type="text"
+      name="query"
+      minlength="3"
+      required>
+    <button
+      class="form__control form__control--submit"
+      type="submit">
+      Search
+    </button>
+  </form>
+</main>

@@ -1,0 +1,25 @@
+.form {
+  display: flex;
+}
+
+.form__control {
+  background-color: var(--form-control-bg);
+  border-color: var(--form-control-border-color);
+  border-style: var(--form-control-border-style);
+  border-width: var(--form-control-border-width);
+  padding: var(--form-control-padding-y) var(--form-control-padding-x);
+}
+
+.form__control--text {
+  flex-grow: 2;
+  margin-right: 10px;
+}
+
+.form__control:focus {
+  border-color: var(--form-control-border-color-focus);
+  outline: none;
+}
+
+.form__control--submit {
+  background-color: var(--form-control-submit-bg);
+}

@@ -1,0 +1,40 @@
+.property {
+  padding-bottom: 2rem;
+}
+
+.property__img {
+  margin-bottom: 1rem;
+}
+
+.property__title {
+  font-size: var(--font-size-large);
+  font-weight: var(--font-weight-normal);
+  margin-bottom: 1rem;
+}
+
+.property__price {
+  color: var(--red);
+  font-size: var(--font-size-large);
+  font-weight: var(--font-weight-normal);
+  margin-bottom: 1rem;
+}
+
+.property__footer {
+  background-color: var(--grey-100);
+  color: var(--grey-400);
+  padding: 0.3125rem 0.3125rem 1rem;
+}
+
+.property__agent-logo {
+  margin-bottom: 0.75rem;
+}
+
+.property__agent-detail {
+  color: var(--grey-400);
+  font-size: var(--font-size-x-small);
+  margin-bottom: 0.625rem;
+}
+
+.property__agent-detail:last-child {
+  margin-bottom: 0;
+}
