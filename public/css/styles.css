@@ -1,0 +1,10 @@
+@import url("//cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css");
+
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
