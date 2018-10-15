@@ -1,0 +1,44 @@
+#
+# CircleCI configuration for property-search
+#
+
+version: 2
+jobs:
+  setup:
+    working_directory: ~/property-search
+    docker:
+      - image: circleci/node:8-browsers
+    steps:
+      - checkout
+      - restore_cache:
+          key: ~/property-search-{{ .Branch }}-{{ checksum "package.json" }}
+      - run: yarn --silent
+      - save_cache:
+          key: ~/property-search-{{ .Branch }}-{{ checksum "package.json" }}
+          paths:
+            - node_modules
+
+  test:
+    working_directory: ~/property-search
+    docker:
+      - image: circleci/node:8-browsers
+    steps:
+      - checkout
+      - restore_cache:
+          key: ~/property-search-{{ .Branch }}-{{ checksum "package.json" }}
+      - run:
+          name: Run server
+          command: yarn start
+          background: true
+      - run: yarn lint
+      - run: yarn test
+
+
+workflows:
+  version: 2
+  setup_and_test:
+    jobs:
+      - setup
+      - test:
+          requires:
+            - setup

@@ -1,4 +1,4 @@
-# Phone Picker
+# Property Search
 
 [![CircleCI](https://circleci.com/gh/edoparearyee/property-search.svg?style=shield)](https://circleci.com/gh/edoparearyee/property-search)
 
