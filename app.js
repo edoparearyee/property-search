@@ -25,6 +25,7 @@ app.use('/results', resultsRouter);
 // catch 404
 app.use(function(req, res, next) {
   res.locals.message = 'Requested page not found';
+  res.locals.title = 'Not Found';
   res.status(404);
   res.render('not-found');
 });
