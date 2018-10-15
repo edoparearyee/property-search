@@ -22,7 +22,7 @@ router.get('/', async function(req, res, next) {
       currency: 'GBP',
       minimumFractionDigits: 0,
       maximumFractionDigits: 0
-    }).format(listing.price)
+    }).format(listing.price);
   });
 
   // Render page
@@ -34,7 +34,7 @@ router.get('/', async function(req, res, next) {
 
 async function getData() {
   const port = process.env.PORT || '3000';
-  const url = `http://localhost:${port}/data/data.json`
+  const url = `http://localhost:${port}/data/data.json`;
   return await request(url);
 }
 
