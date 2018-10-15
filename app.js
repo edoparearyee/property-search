@@ -1,12 +1,11 @@
-const createError = require('http-errors');
 const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 
-const indexRouter = require('./routes/index');
+
+const searchRouter = require('./routes/search');
 const resultsRouter = require('./routes/results');
-const apiRouter = require('./routes/api');
 
 const app = express();
 
@@ -20,13 +19,14 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', indexRouter);
+app.use('/search', searchRouter);
 app.use('/results', resultsRouter);
-app.use('/api', apiRouter);
 
-// catch 404 and forward to error handler
+// catch 404
 app.use(function(req, res, next) {
-  next(createError(404));
+  res.locals.message = 'Requested page not found';
+  res.status(404);
+  res.render('not-found');
 });
 
 // error handler

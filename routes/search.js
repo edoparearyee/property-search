@@ -3,7 +3,8 @@ const router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Search' });
+  const noResults = req.param('no-results');
+  res.render('search', { title: 'Search', noResults });
 });
 
 module.exports = router;

@@ -1,9 +1,29 @@
 .results {
-  padding: 1rem;
+  padding: 16px;
 }
 
 .results__summary {
   font-size: var(--font-size-x-small);
   font-weight: var(--font-weight-normal);
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+  .results {
+    padding: 24px;
+  }
+
+  .results__summary {
+    margin-bottom: 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .results {
+    padding: 32px;
+  }
+
+  .results__summary {
+    margin-bottom: 32px;
+  }
 }

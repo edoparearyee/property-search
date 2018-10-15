@@ -26,8 +26,8 @@ html {
   --form-control-border-width: 1px;
   --form-control-border-color-focus: var(--grey-300);
   --form-control-bg: var(--white);
-  --form-control-padding-x: 0.625rem;
-  --form-control-padding-y: 0.625rem;
+  --form-control-padding-x: 10px;
+  --form-control-padding-y: 10px;
 
   --form-control-submit-bg: var(--grey-100);
 }

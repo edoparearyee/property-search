@@ -26,3 +26,18 @@ p {
 img {
   max-width: 100%;
 }
+
+ol,
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 1024px) {
+  html,
+  body {
+    font-size: 19.2px;
+  }
+}

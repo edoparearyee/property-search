@@ -1,13 +1,22 @@
 <main class="home">
   <h1
     class="home__heading">
-    Search for houses and flats for sale across the UK
+    {{#if noResults}}
+      No Results
+    {{else}}
+      Search for houses and flats for sale across the UK
+    {{/if}}
   </h1>
+  {{#if noResults}}
+  <p class="home__subheading">
+    Enter another location and search again
+  </p>
+  {{/if}}
 
   <form
     class="form"
     method="GET"
-    action="/api/search">
+    action="/results">
     <label
       class="form__label sr-only"
       for="query">
